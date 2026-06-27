@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.beans.Address" id="addrId1" autowire-candidate="false">
+    
+    	<property name="houseno" value="1000"/>
+     	<property name="city" value="Mumbai"/>
+     	<property name="pincode" value="123456"/>
+    
+    </bean>
+    
+    <bean class="com.beans.Address" id="addrId2">
+    
+    	<property name="houseno" value="1001"/>
+     	<property name="city" value="Banglore"/>
+     	<property name="pincode" value="654321"/>
+    
+    </bean>
+    
+    
+    
+    <bean class="com.beans.Student" id="stdId" autowire="byType">
+    
+    	<property name="id" value="1456"/>
+     	<property name="name" value="Sujjal"/>
+     	
+     	
+    
+    
+    </bean>
+
+</beans>

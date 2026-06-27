@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.beans.Address" id="addrId" >
+    
+    <constructor-arg value="1000" />
+    <constructor-arg value="Nashik" />
+    <constructor-arg value="704604" />
+    	 
+    
+    </bean>
+    
+    <bean class="com.beans.Address" id="addrId1"  autowire-candidate="false">
+    
+    <constructor-arg value="1000" />
+    <constructor-arg value="pune" />
+    <constructor-arg value="704604" />
+    	 
+    
+    </bean>
+    
+    
+    
+    
+    
+    <bean class="com.beans.Student" id="stdId" autowire="constructor">
+    
+    <constructor-arg value="10000" index="0" />
+    <constructor-arg value="Nitin" index="1"/>
+     	
+    
+    </bean>
+
+</beans>
