@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h3>Welcome to Java Programming</h3>
+
+<a href="hellopage" >Open Hello Page</a><br><br>
+
+<a href="aboutus" >About-Us Page</a>
+
+</body>
+</html>
